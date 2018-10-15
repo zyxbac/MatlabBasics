@@ -1,0 +1,10 @@
+releases/
+work/
+slprj/
+html/
+helpsearch-v?/
+
+*.asv
+*.autosave
+*.r20??[ab]
+*.mex*
