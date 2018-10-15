@@ -46,8 +46,13 @@ classdef waitAtTheBar
         end
         
         function closeWaitBar(self)
-            close(self.theWaitbar)
+            close(ancestor(self.theWaitbar, 'figure'));
         end
+
+        function delete(self)
+            closeWaitBar(self);
+        end
+
     end %public
     
 end %waitAtTheBar

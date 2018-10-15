@@ -5,9 +5,9 @@
     <param.email>michael.breuer@ilsf.de</param.email>
     <param.company>ilSF</param.company>
     <param.summary />
-    <param.description />
+    <param.description>A collection of the most basic tools everybody needs to survive their Matlab usage.</param.description>
     <param.screenshot>${PROJECT_ROOT}\image\matlabbasicstoolbox.png</param.screenshot>
-    <param.version>1.1</param.version>
+    <param.version>1.2</param.version>
     <param.output>${PROJECT_ROOT}\MatlabBasics.mltbx</param.output>
     <param.products.name>
       <item>MATLAB</item>
@@ -16,7 +16,7 @@
       <item>1</item>
     </param.products.id>
     <param.products.version>
-      <item>9.4</item>
+      <item>9.5</item>
     </param.products.version>
     <param.platforms />
     <param.guid>7fc64c77-1bcd-4673-8474-e3cbceab2a41</param.guid>
@@ -38,9 +38,14 @@
     <param.compatiblity.macos>true</param.compatiblity.macos>
     <param.compatiblity.linux>true</param.compatiblity.linux>
     <param.compatiblity.matlabonline>true</param.compatiblity.matlabonline>
+    <param.installation.map />
+    <param.additional.sw.names />
+    <param.additional.sw.licenses />
+    <param.additional.sw.win.url />
+    <param.additional.sw.mac.url />
+    <param.additional.sw.linux.url />
     <unset>
       <param.summary />
-      <param.description />
       <param.output />
       <param.platforms />
       <param.exclude.filters />
@@ -60,6 +65,12 @@
       <param.compatiblity.macos />
       <param.compatiblity.linux />
       <param.compatiblity.matlabonline />
+      <param.installation.map />
+      <param.additional.sw.names />
+      <param.additional.sw.licenses />
+      <param.additional.sw.win.url />
+      <param.additional.sw.mac.url />
+      <param.additional.sw.linux.url />
     </unset>
     <fileset.rootdir>
       <file>${PROJECT_ROOT}\tbx</file>
@@ -77,29 +88,20 @@
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2018a</root>
+      <root>C:\Program Files\MATLAB\R2018b</root>
       <toolboxes>
-        <toolbox name="fixedpoint" />
         <toolbox name="matlabcoder" />
-        <toolbox name="matlabhdlcoder" />
         <toolbox name="embeddedcoder" />
         <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
         <toolbox name="polyspacebugfinder" />
+        <toolbox name="neuralnetwork" />
       </toolboxes>
-      <toolbox>
-        <fixedpoint>
-          <enabled>true</enabled>
-        </fixedpoint>
-      </toolbox>
       <toolbox>
         <matlabcoder>
           <enabled>true</enabled>
         </matlabcoder>
-      </toolbox>
-      <toolbox>
-        <matlabhdlcoder>
-          <enabled>true</enabled>
-        </matlabhdlcoder>
       </toolbox>
       <toolbox>
         <embeddedcoder>
@@ -112,9 +114,24 @@
         </gpucoder>
       </toolbox>
       <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
         <polyspacebugfinder>
           <enabled>true</enabled>
         </polyspacebugfinder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
       </toolbox>
     </matlab>
     <platform>
